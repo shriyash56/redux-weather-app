@@ -32,3 +32,23 @@
     margin-right: auto;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .current_weatherData {
+    height: 450px;
+    width: auto;
+    border-radius: 31px;
+    background: #c0c0c0;
+    color: black;
+    box-shadow: 21px 21px 41px #a3a3a3, -21px -21px 41px #dddddd;
+  }
+
+  .fiveDay_weather {
+    height: 450px;
+    width: auto;
+    border-radius: 31px;
+    background: #c0c0c0;
+    color: black;
+    box-shadow: 17px 17px 34px #a3a3a3, -17px -17px 34px #dddddd;
+  }
+}
