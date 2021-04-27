@@ -7,16 +7,13 @@ function WeatherList() {
   const loading = weather_data.loading;
   console.log(loading);
   const cityData = weather_data.weatherData;
-  //console.log(cityData);
   const fiveDay_data = [];
 
   if (cityData !== undefined) {
     const curr_date_time = cityData.list[0].dt_txt;
     const curr_time = curr_date_time.split(" ")[1];
     const curr_hour = curr_time.split(":")[0];
-    //console.log(curr_hour);
     let next_day = (24 - curr_hour) / 3;
-    //console.log(next_day);
     let temp = Math.ceil(cityData.list[next_day].main.temp - 273);
     let hum = cityData.list[next_day].main.humidity;
     let obj = { temp: temp, hum: hum };
@@ -31,7 +28,6 @@ function WeatherList() {
       fiveDay_data.push(obj1);
       k++;
     }
-    //console.log(fiveDay_data[1]);
   }
 
   return (
