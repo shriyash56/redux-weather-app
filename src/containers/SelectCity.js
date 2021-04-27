@@ -4,7 +4,6 @@ import { checkLogged } from "../actions/index";
 import { fetchWeather } from "../actions/index";
 import { useDispatch } from "react-redux";
 import "../css/dropdown.css";
-// import { loading } from "../actions/index";
 
 function SelectCity() {
   const dispatch = useDispatch();

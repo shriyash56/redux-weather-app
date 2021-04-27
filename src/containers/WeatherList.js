@@ -9,7 +9,7 @@ function WeatherList() {
   const cityData = weather_data.weatherData;
   const fiveDay_data = [];
 
-  if (cityData !== undefined) {
+  if (cityData) {
     const curr_date_time = cityData.list[0].dt_txt;
     const curr_time = curr_date_time.split(" ")[1];
     const curr_hour = curr_time.split(":")[0];
@@ -38,7 +38,7 @@ function WeatherList() {
         <div className="current_weatherData">
           <h1 style={{ textAlign: "center" }}>Current Weather Data</h1>
           <br />
-          {cityData !== undefined && (
+          {cityData && (
             <div>
               <h3>
                 Temp: {Math.ceil(cityData.list[0].main.temp - 273)} &#8451;
@@ -52,7 +52,7 @@ function WeatherList() {
         <div className="fiveDay_weather">
           <h1 style={{ textAlign: "center" }}>5 Day Weather Forecast</h1>
           <br />
-          {cityData !== undefined && (
+          {cityData && (
             <div>
               <table className="table">
                 <thead>
