@@ -10,5 +10,5 @@ export const checkLogged = () => ({
 
 export const loading = () => ({
   type: "LOADING",
-  loading: true
+  loading: false
 });

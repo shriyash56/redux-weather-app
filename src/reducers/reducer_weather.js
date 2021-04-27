@@ -4,7 +4,7 @@ export default function (state = {}, action) {
       return { ...state, weatherData: action.payload, loading: false };
 
     case "LOADING":
-      return { ...state, loading: true };
+      return { ...state, loading: !action.loading };
 
     case "ISLOGGED":
       return { ...state, IsLogged: !action.IsLogged };

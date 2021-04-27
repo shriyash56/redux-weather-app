@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
 import SelectCity from "../containers/SelectCity";
-import WeatherList from "../containers/weather_list";
+import WeatherList from "../containers/WeatherList";
 import About from "../containers/About";
 import Login from "../containers/Login";
 import Signup from "../containers/Signup";
